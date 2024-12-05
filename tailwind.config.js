@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import children from 'tailwind-children';
+
 export default {
   content: [
     "./index.html",
@@ -8,11 +10,11 @@ export default {
     extend: {
       colors: {
         primary: "#A68921",
-        secondary:"#bba53d",
+        secondary: "#bba53d",
       },
     },
   },
   plugins: [
-    require('tailwind-children'),
+    children,
   ],
 };
