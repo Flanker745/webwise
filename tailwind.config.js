@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#A68921",
+        secondary:"#bba53d",
+      },
+    },
   },
-  plugins: [],
-}
+  plugins: [
+    require('tailwind-children'),
+  ],
+};
