@@ -61,7 +61,7 @@ function Header() {
                 {navbar ? <IoCloseSharp /> : <TiThMenu />}
               </div>
               <nav
-                className={`absolute bg-white lg:bg-transparent lg:relative w-full h-screen lg:h-auto top-0 flex-col flex items-center lg:justify-between duration-300 ${
+                className={`absolute bg-white lg:bg-transparent lg:relative w-full h-screen lg:h-full top-0 flex-col lg:flex-row flex items-center lg:justify-between duration-300 ${
                   navbar ? "translate-y-0" : "-translate-y-full"
                 } lg:translate-y-0`}
               >
