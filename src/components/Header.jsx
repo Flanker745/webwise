@@ -8,6 +8,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa6";
 import Banner from "./Banner";
 import { TiThMenu } from "react-icons/ti";
+import { IoCloseSharp } from "react-icons/io5";
 
 function Header() {
   const [navbar, setNebar] = useState(false);
@@ -52,18 +53,17 @@ function Header() {
             </div>
             <div className="w-full lg:block flex justify-end">
               <div
-               
-                className="h-fit lg:hidden block  w-fit"
-              >
-                <TiThMenu  onClick={() => {
+                onClick={() => {
                   setNebar(!navbar);
-                }} className="text-4xl bg-white m-2" />
-
+                }}
+                className="h-fit lg:hidden duration block z-[9999] text-4xl p-2 w-fit justify-end"
+              >
+                {navbar ? <IoCloseSharp /> : <TiThMenu />}
               </div>
               <nav
-                className={` absolute bg-white left-0 lg:bg-inherit lg:top-0 lg:left-0 w-full h-fit duration-300 lg:relative lg:flex  items-center justify-between children:h-full children:flex children:items-center lg:h-full  ${
-                  navbar ? "top-0" : "-top-[200%]"
-                }`}
+                className={`absolute bg-white lg:bg-transparent lg:relative w-full h-screen lg:h-auto top-0 flex-col flex items-center lg:justify-between duration-300 ${
+                  navbar ? "translate-y-0" : "-translate-y-full"
+                } lg:translate-y-0`}
               >
                 <Link className="hover:text-gray-700">Home</Link>
                 <Link className="hover:text-gray-700">About</Link>

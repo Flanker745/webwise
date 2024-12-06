@@ -7,8 +7,7 @@ function Banner() {
         {/* <img src={img} className={`${img}`} alt="" /> */}
         <div className={` `}>
           {" "}
-          <div className=" h-full w-full  opacity-70"></div>
-          <div className=" w-11/12 sm:w-9/12 xl:w-4/12 md:text-2xl text-base lg:text-4xl absolute top-0 left-[50%]  translate-x-[-50%] font-bold text-white m-auto flex items-center h-full">
+          <div className=" w-11/12 sm:w-9/12 xl:w-4/12 md:text-2xl -z-[9] text-base lg:text-4xl absolute top-[50%]  left-[50%] h-fit translate-x-[-50%] translate-y-[-50%] font-bold text-white m-auto flex items-center">
             <h2>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
               nobis consequuntur, libero fugiat, incidunt, officia culpa quasi
